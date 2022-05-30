@@ -57,12 +57,6 @@ table a:hover
 	color: gold;
 }
 
-/*#filter
-{
-	background-color: darkgray;
-	padding: 20px;
-}*/
-
 @media only screen and (max-device-width: 1350px)
 {
 	#cars_list
