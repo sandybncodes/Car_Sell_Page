@@ -157,24 +157,3 @@ insertRow("table_toyota", car_toyota, car_toyota.denum, car_toyota.img, car_toyo
 	car_toyota.motor, car_toyota.cut_vit, car_toyota.cap_pas, car_toyota.pret);
 
 //======================================================================================================================================
-
-function myFunction() {
-	var input, filter, div, table, tr, td, i, txtValue;
-	input = document.getElementById("search");
-	filter = input.value.toUpperCase();
-	div = document.getElementById("cars_list");
-	table = div.getElementsByTagName("table");
-
-	for(i = 0; i < table.length; i++) {
-		tr = table[i].getElementsByTagName("tr")[1].getElementsByTagName("td")[0];
-		if(tr) 
-		{
-			txtValue = tr.textContent || tr.innerText;
-			if(txtValue.toUpperCase().indexOf(filter) > -1) {
-				document.getElementById('div_list_'+table[i].id).style.display = "";
-			} else {
-				document.getElementById('div_list_'+table[i].id).style.display = "none";
-			}
-		}
-	}
-}
