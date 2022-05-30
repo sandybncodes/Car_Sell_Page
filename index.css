@@ -1,0 +1,96 @@
+body 
+{
+	background-color: #3d3d3d;
+}
+
+#cars_list
+{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	padding: 20px;
+}
+
+#cars_list div
+{
+	padding: 10px;
+}
+
+table
+{
+	background-color: whitesmoke;
+	color: black;
+	text-align: center;
+	border: 1px solid;
+	border-radius: 5px;
+	border-color: black;
+	padding: 5px;
+	width: 100%;
+}
+
+table img 
+{
+	border-radius: 5px;
+}
+
+table hr 
+{
+	height: 2px;
+	background-color: black;
+}
+
+p 
+{
+	text-align: left;
+}
+
+table a 
+{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+table a:hover 
+{
+	color: gold;
+}
+
+/*#filter
+{
+	background-color: darkgray;
+	padding: 20px;
+}*/
+
+@media only screen and (max-device-width: 1350px)
+{
+	#cars_list
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media only screen and (max-device-width: 1000px)
+{
+	#cars_list
+	{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	#div_list
+	{
+		width: 100%;
+	}
+
+	table
+	{
+		width: 100%;
+	}
+
+	table p 
+	{
+		font-size: 20px;
+	}
+}
